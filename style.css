@@ -1,0 +1,118 @@
+.warpper{
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+}  
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 80px); /* 4 tlačítka vedle sebe */
+    gap: 10px; /* mezera mezi tlačítky */
+    justify-content: center; /* zarovnání doprostřed */
+}
+
+button {
+    font-size: 32px;  /* velká čísla */
+    width: 80px;      /* velká tlačítka */
+    height: 80px;
+}
+#result {
+    width: 100%;           /* přes celou šířku wrapperu */
+    height: 60px;          /* vysoký řádek */
+    font-size: 40px;       /* velká čísla */
+    text-align: right;     /* čísla zarovnaná vpravo */
+    padding: 10px;         /* mezera uvnitř inputu */
+    margin-bottom: 20px;   /* mezera mezi displejem a tlačítky */
+    box-sizing: border-box;/* aby padding nezpůsobil, že je input širší než wrapper */
+    border: 2px solid #000; /* volitelně rámeček, aby byl vidět */
+    border-radius: 10px;   /* kulaté rohy, hezké */
+}
+body {
+    height: 100vh;
+    margin: 0;
+
+    background: linear-gradient(
+        135deg,
+        #7ecbff,
+        #2f6bff,
+        #001a8f
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.warpper {
+    padding: 20px;
+    width: 380px;
+    border-radius: 15px;
+
+    background-color: rgba(255,255,255,0.1);
+}
+button {
+    font-size: 28px;
+
+    width: 80px;
+    height: 80px;
+
+    border: none;
+    border-radius: 15px;
+
+    background: #f2f2f2; /* velmi světle šedá */
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+    transition: all 0.2s ease;
+}
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.clear {
+    background: #ff6b6b;
+    color: white;
+}
+button:nth-child(4n) {
+    background: #09495c;
+    color: white;
+}
+#result {
+    width: 100%;
+    height: 60px;
+
+    font-size: 36px;
+
+    text-align: right;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #f7f7f7;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+}
+.social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+.instagram{
+display:block;
+text-align:center;
+margin-top:20px;
+color:white;
+}
